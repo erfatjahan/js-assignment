@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOOD ORDER</title>
+  <link rel="stylesheet" href="ass2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>HELLO FOODIE</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-bar" placeholder="Search for a meal">
+        <button id="search-btn">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <section class="cards-and-cart">
+      <div id="meal-container" class="grid-container"></div>
+      <aside class="cart">
+        <h3>My Cart (<span id="cart-count">0</span> Items)</h3>
+        <ul id="cart-list"></ul>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Food Order App | All Rights Reserved</p>
+      <p>Follow us: 
+        <a href="#" class="social-icon">Facebook</a> | 
+        <a href="#" class="social-icon">Twitter</a> | 
+        <a href="#" class="social-icon">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal for Meal Details -->
+  <div id="meal-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+  <script src="ass.js"></script>
+</body>
+</html>
